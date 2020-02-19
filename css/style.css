@@ -1,3 +1,30 @@
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'ban ban'
+    'ar1 ar2'
+    ;
+}
 header{
     background: grey;
+    height: 10vh;
+}
+#banner{
+    background: blue;
+    grid-area: ban;
+    height: 20vh;
+    width: 100vw;
+}
+#art1{
+    background: whitesmoke;
+    grid-area: ar1;
+    height: 70vh;
+}
+#art2{
+    background: whitesmoke;
+    grid-area: ar2;
+    height: 70vh;
 }
