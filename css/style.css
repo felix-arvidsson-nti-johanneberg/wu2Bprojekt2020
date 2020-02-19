@@ -1,30 +1,49 @@
 body{
     margin: 0;
 }
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+
+}
 .container{
+    width: 100%;
     display: grid;
     grid-template-areas: 
     'ban ban'
     'ar1 ar2'
     ;
+    grid-template-columns: 1fr 1fr;
 }
 header{
-    background: lightgrey;
+    background: whitesmoke;
     height: 10vh;
+    width: 100%;
+    opacity: 0%;
+    position: fixed;
 }
 #banner{
     background: blue;
     grid-area: ban;
-    height: 20vh;
-    width: 100vw;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
 }
 #art1{
     background: whitesmoke;
     grid-area: ar1;
     height: 70vh;
+    width: 100%;
+    padding: 10px;
+    /* margin-right: 5px; */
 }
 #art2{
     background: whitesmoke;
     grid-area: ar2;
     height: 70vh;
+    width: 100%;
+    /* margin-left: 5px; */
+    padding: 10px;
+
 }
