@@ -38,7 +38,9 @@ body{
     height: 5vh;
 }
 header{
+    padding: 10px;
     display: flex;
+    align-items: center;
     height: 10vh;
     width: 100%;
     position: fixed;
