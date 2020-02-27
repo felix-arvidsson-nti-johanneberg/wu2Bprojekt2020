@@ -30,20 +30,51 @@ body{
     position: absolute;
 }
 #logo{
+    /*background: whitesmoke;*/
     height: auto;
-    width: 5vw;
+    width: auto;
+    margin: 8px;
 }
 #logo img {
     width: auto;
     height: 5vh;
 }
 header{
-    padding: 10px;
     display: flex;
     align-items: center;
     height: 10vh;
     width: 100%;
     position: fixed;
+    justify-content: center;
+}
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    height: 100%;
+    justify-self: center;
+}
+li{
+    /*display: inline; */
+    display: flex;
+    justify-content: center;
+    float: right;
+    border-right: 1px solid grey;
+    height: 100%;
+    width: 20vw;
+    align-content: center;
+    
+}
+li:last-child{
+    border-left: 1px solid grey;
+}
+.knapp{
+    display: block;
+    margin: 0px 4px 0px 4px;
+    text-decoration: none;
+    color: whitesmoke;
+
 }
 #banner{
     background: blue;
