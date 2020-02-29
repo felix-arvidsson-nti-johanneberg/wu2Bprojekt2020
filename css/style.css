@@ -2,6 +2,7 @@ html{
     scroll-padding-top: 10vh;
 }
 body{
+    font-family: 'Raleway' ;
     margin: 0;
 }
 * {
@@ -10,6 +11,10 @@ body{
     padding: 0; */
 
 }
+@font-face {
+    font-family: Raleway;
+    src: local(Raleway)
+  }
 .container{
     width: 100%;
     display: grid;
@@ -62,7 +67,7 @@ li{
     display: flex;
     justify-content: center;
     float: right;
-    border-right: 1px solid grey;
+    /*border-right: 1px solid grey;*/
     height: 100%;
     width: 20vw;
     align-content: center;
@@ -77,6 +82,7 @@ li:last-child{
     text-decoration: none;
     color: whitesmoke;
     width: 20vw;
+    border-right: 1px solid grey;
 
 }
 #banner{
