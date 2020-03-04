@@ -65,32 +65,39 @@ header{
 li{
     /*display: inline; */
     display: flex;
-    justify-content: center;
+
     float: right;
     /*border-right: 1px solid grey;*/
     height: 100%;
-    width: 20vw;
+    width: 15vw;
     align-content: center;
-    
-}
-li:last-child{
-    /*border-left: 1px solid grey;*/
+    border-right: 1px solid grey;
 }
 .knapp{
     display: block;
+    display: flex;
     margin: 0px 4px 0px 4px;
     text-decoration: none;
     color: whitesmoke;
-    width: 20vw;
-    border-right: 1px solid grey;
+    width: 100%;
+    justify-content: center;
 
 }
 #banner{
-    background: blue;
+    background-image: url(/img/blueimage.jpg);
+    background-size: cover;
     grid-area: ban;
     height: 100vh;
     width: 100%;
     z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#name{
+    margin-left: 5rem;
+    color: white;
+    font-size: larger;
 }
 #art1{
     background: whitesmoke;
