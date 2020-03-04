@@ -26,7 +26,7 @@ body{
 }
 #headerbackground{
     background: darkslateblue;
-    opacity: 50%; 
+    opacity: 0; 
     height: 100%;
     width: 100%;
     top: 0;
@@ -97,12 +97,18 @@ li{
 #name{
     margin-left: 5rem;
     color: white;
-    font-size: larger;
+    font-size: x-large;
+}
+#arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    width: 4rem;
 }
 #art1{
     background: whitesmoke;
     grid-area: ar1;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     padding: 10px;
     /* margin-right: 5px; */
@@ -110,7 +116,7 @@ li{
 #art2{
     background: whitesmoke;
     grid-area: ar2;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     /* margin-left: 5px; */
     padding: 10px;
