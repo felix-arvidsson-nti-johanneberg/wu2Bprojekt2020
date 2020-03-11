@@ -20,6 +20,7 @@ body{
     display: grid;
     grid-template-areas: 
     'ban ban'
+    'oss img'
     'ar1 ar2'
     ;
     grid-template-columns: 1fr 1fr;
@@ -63,11 +64,8 @@ header{
     justify-self: center;
 }
 li{
-    /*display: inline; */
     display: flex;
-
     float: right;
-    /*border-right: 1px solid grey;*/
     height: 100%;
     width: 15vw;
     align-content: center;
@@ -105,25 +103,36 @@ li{
     bottom: 1%;
     width: 4rem;
 }
+#omossimg{
+    grid-area: img;
+    height: 90vh;
+    background-image: url(/img/man-and-woman-discussing.jpg);
+    background-size: cover;
+}
+#artoss{
+    padding-top: 7vh;
+    grid-area: oss;
+    height: 90vh;
+    margin-left: 7em;
+    margin-right: 3em;
+    line-height: 130%;
+}
 #art1{
     background: white;
     grid-area: ar1;
     height: 90vh;
     padding: 10px;
-    /* margin-right: 5px; */
     margin-left: 15em;
-    margin-top: 7em;
+    margin-top: 2em;
     line-height: 130%;
 }
 #art2{
     background: white;
     grid-area: ar2;
     height: 90vh;
-    /*width: 100%;
-    /* margin-left: 5px; */
     padding: 10px;
     margin-right: 15em ;
-    margin-top: 7em;
+    margin-top: 2em;
     line-height: 130%;
 
 }
