@@ -34,18 +34,6 @@ body{
     z-index: -1;
     position: absolute;
 }
-/*
-#logo{
-    background: whitesmoke;
-    height: auto;
-    width: auto;
-    margin: 8px;
-}
-#logo img {
-    width: auto;
-    height: 5vh;
-}
-*/
 header{
     display: flex;
     align-items: center;
@@ -63,11 +51,8 @@ header{
     justify-self: center;
 }
 li{
-    /*display: inline; */
     display: flex;
-
     float: right;
-    /*border-right: 1px solid grey;*/
     height: 100%;
     width: 15vw;
     align-content: center;
@@ -111,14 +96,13 @@ li{
     height: 90vh;
     width: 100%;
     padding: 10px;
-    /* margin-right: 5px; */
 }
 #art2{
     background: whitesmoke;
     grid-area: ar2;
     height: 90vh;
     width: 100%;
-    /* margin-left: 5px; */
     padding: 10px;
 
 }
+
