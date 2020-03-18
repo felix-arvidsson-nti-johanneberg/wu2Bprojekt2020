@@ -125,8 +125,21 @@ li{
     margin-right: 15em ;
     margin-top: 5em;
     line-height: 150%;
-
 }
+.parallax {
+    
+    background-image: url(/img/paralax_img.png);
+  
+    
+    height: 40vh;
+  
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media screen and (max-width: 450px) {
     .container{
         grid-template-areas: 
@@ -148,22 +161,29 @@ li{
     #artoss{
         padding-top: 2vh;
         line-height: initial;
-        margin-left: 2em;
+        margin-left: 1em;
         height: 100vh;
     }
     #omossimg{
         background-size: cover;
         height: 30vh;
     }
-    #ar1{
+    #art1{
         line-height: initial;
-        margin-left: 7em;
-        margin-right: 3em;
+        height: 100vh;
+        margin-left: 1em;
+        margin-right: 2em;
+        margin-top: 1em;
+        padding: 10px;
+
     }
     #art2{
         line-height: initial;
-        margin-left: 7em;
-        margin-right: 3em;
+        padding: 10px;
+        margin-left: 1em;
+        margin-right: 2em;
+        margin-top: 1em;
+        height: 100vh;
 
     }
     
