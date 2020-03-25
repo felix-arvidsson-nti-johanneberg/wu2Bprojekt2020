@@ -1,5 +1,6 @@
 html{
     scroll-padding-top: 10vh;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Raleway' ;
@@ -58,7 +59,9 @@ li{
     height: 100%;
     width: 15vw;
     align-content: center;
-    border-right: 1px solid grey;
+}
+#menubutton{
+    display: none;
 }
 .knapp{
     display: block;
@@ -130,25 +133,26 @@ li{
 .parallax {
     
     background-image: url(/img/paralax_img.png);
-  
-    
     height: 40vh;
-  
-    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.kontakt{
-    background: darkblue;
-    height: 90vh;
-    opacity: 0.6;
+#kontakt{
+    padding: 10px;
+    background: rgba(40, 0, 100, 0.5);
+    height: 85vh;
     z-index: 1;
+    color: black;
 }
 footer{
+    padding: 7em;
+    display: flex;
     background: darkgrey;
-    height: 65vh;
+    height: 55vh;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 450px) {
@@ -160,6 +164,17 @@ footer{
         'ar1'
         'ar2';
         grid-template-columns: auto;
+    }
+    header{
+        
+    }
+    #menu{
+        display: none;
+    }
+    #menubutton{
+        margin: 5px;
+        display: inherit;
+        float: right;
     }
     #banner{
         width: 100vw;
@@ -199,6 +214,13 @@ footer{
     }
     .parallax{
         height: 25vh;
+    }
+    #kontakt{
+        height: 50vh;
+    }
+    footer{
+        padding: 2em;
+        height: 40vh;
     }
     
 
