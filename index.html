@@ -14,13 +14,22 @@
         <div id="headerbackground"></div>        
         <ul id = "menu">
             <li><a class="knapp" href="#kontakt"><h2>Kontakt</h2></a></li>
+            <li><a class="knapp" href="#anst"><h2>Anställda</h2></a></li>
             <li><a class="knapp" href="#art1"><h2>Arbete</h2></a></li>
             <li><a class="knapp" href="#artoss"><h2>Om oss</h2></a></li>
             <li><a class="knapp" href="#banner"><h2>Hem</h2></a></li>
             
         </ul>
-        <img id="menubutton" src="/img/baseline_list_black_18dp.png" alt="a menu button">
-            
+        <img id="menubutton" src="/img/baseline_list_black_18dp.png" alt="a menu button" onclick="toggleMenu()">
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="#banner"></a>Hem</li>
+                <li><a href="#artoss"></a>Om oss</li>
+                <li><a href="#art1"></a>Arbete</li>
+                <li><a href="#anst"></a>Anställda</li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
     </header>
     <div class="container">
         <div id="banner">
@@ -51,9 +60,19 @@
         </article>
     </div>
     <div class="parallax"></div>
+    <section id="anst">
+        <h2 id="ansttit">Anställda</h2>
+        <img class="anstimg1" src="/img/anstalld.png" alt="En bild på en anställd">
+        <img class="anstimg2" src="/img/anstalld.png" alt="En bild på en anställd">
+        <img class="anstimg3" src="/img/anstalld.png" alt="En bild på en anställd">
+        <h3 id="namn">Namn Namnsson</h3>
+        <h3 id="vanlig">Vanlig Namn</h3>
+        <h3 id="lorem">Lorem ipsum</h3>
+    </section>
     <section id="kontakt">
-        <h2>Kontakta oss</h2>
-        <article></article>
+        <h2>Kontakta oss via mail</h2>
+        <article> på lorem.ipsum@loremail.com</article>
+        
     </section>
     <footer>
         <h2>Skapare</h2>

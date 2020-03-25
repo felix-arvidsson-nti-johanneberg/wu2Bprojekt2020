@@ -8,8 +8,6 @@ body{
 }
 * {
     box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
 
 }
 @font-face {
@@ -61,6 +59,9 @@ li{
     align-content: center;
 }
 #menubutton{
+    display: none;
+}
+.hamburger-menu{
     display: none;
 }
 .knapp{
@@ -116,7 +117,7 @@ li{
     grid-area: ar1;
     height: 80vh;
     padding: 10px;
-    margin-left: 15em;
+    margin-left: 10em;
     margin-top: 5em;
     line-height: 150%;
 
@@ -126,7 +127,7 @@ li{
     grid-area: ar2;
     height: 80vh;
     padding: 10px;
-    margin-right: 15em ;
+    margin-right: 10em ;
     margin-top: 5em;
     line-height: 150%;
 }
@@ -139,10 +140,35 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#anst{
+    height: 70vh;
+    padding: 3em 0 0 5em;
+}
+#namn{
+    position: absolute;
+    left: 17vw;
+}
+#vanlig{
+    position: absolute;
+    left: 40vw;
+}
+#lorem{
+    position: absolute;
+    left: 63vw;
+}
+.anstimg1{
+    margin: 0 5vw 0 11vw;
+}
+.anstimg2{
+    margin: 0 5vw 0 5vw;
+}
+.anstimg3{
+    margin: 0 5vw 0 5vw;
+}
 #kontakt{
-    padding: 10px;
+    padding: 7em 0 7em 10em;
     background: rgba(40, 0, 100, 0.5);
-    height: 85vh;
+    height: 60vh;
     z-index: 1;
     color: black;
 }
@@ -155,6 +181,7 @@ footer{
     flex-direction: column;
 }
 
+
 @media screen and (max-width: 450px) {
     .container{
         grid-template-areas: 
@@ -165,9 +192,6 @@ footer{
         'ar2';
         grid-template-columns: auto;
     }
-    header{
-        
-    }
     #menu{
         display: none;
     }
@@ -175,6 +199,17 @@ footer{
         margin: 5px;
         display: inherit;
         float: right;
+    }
+    .hamburger-menu {
+        background: hotpink;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        height: 100vh;
+        width: 60vw;
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        transition: right 0.5s;
+        z-index: 2;
     }
     #banner{
         width: 100vw;
@@ -215,13 +250,73 @@ footer{
     .parallax{
         height: 25vh;
     }
+    #anst{
+        height: 150vh;
+        width: 100vw;
+        display: grid;
+        grid-template-areas: 
+        'tit'
+        'anst1'
+        'namn'
+        'anst2'
+        'van'
+        'anst3'
+        'lor';
+    }
+    #ansttit{
+        grid-area: tit;
+    }
+    .anstimg1{
+        margin: 5em 0 0 0 ;
+        grid-area: anst1;
+    }
+    .anstimg2{
+        margin: 2em 0 0 0;
+        grid-area: anst2;
+    }
+    .anstimg3{
+        margin: 5em 0 0 0;
+        grid-area: anst3;
+    }
+    #namn{
+        position: unset;
+        grid-area: namn;
+    }
+    #vanlig{
+        position: unset;
+        grid-area: van;
+    }
+    #lorem{
+        position: unset;
+        grid-area: lor;
+    }
     #kontakt{
         height: 50vh;
+        padding: 10px;
     }
     footer{
         padding: 2em;
         height: 40vh;
     }
+    .show {
+        right: 0;
+    }
+    .hamburger-menu ul {
+        display: unset;
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        top: 8vh;
+        left: 1rem; 
+    }
+
+        .hamburger-menu ul li {
+            margin-bottom: 1rem;
+        }
+
+            .hamburger-menu a {
+                font-size: 1.5rem;
+            }
     
 
 }
