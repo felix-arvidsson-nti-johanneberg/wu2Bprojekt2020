@@ -61,9 +61,6 @@ li{
 #menubutton{
     display: none;
 }
-.hamburger-menu{
-    display: none;
-}
 .knapp{
     display: block;
     display: flex;
@@ -118,8 +115,8 @@ li{
     height: 80vh;
     padding: 10px;
     margin-left: 10em;
-    margin-top: 5em;
-    line-height: 150%;
+    margin-top: 1em;
+    line-height: 140%;
 
 }
 #art2{
@@ -128,8 +125,8 @@ li{
     height: 80vh;
     padding: 10px;
     margin-right: 10em ;
-    margin-top: 5em;
-    line-height: 150%;
+    margin-top: 1em;
+    line-height: 140%;
 }
 .parallax {
     
@@ -199,17 +196,26 @@ footer{
         margin: 5px;
         display: inherit;
         float: right;
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
     }
     .hamburger-menu {
-        background: hotpink;
-        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-        height: 100vh;
-        width: 60vw;
-        position: fixed;
-        top: 0;
-        right: -100vw;
-        transition: right 0.5s;
+        display: none;
+        position: absolute;
+        background-color: royalblue;
+        min-width: 160px;
         z-index: 2;
+    }
+    .hamburger-menu a{
+        display: block;
+        color: white;
     }
     #banner{
         width: 100vw;
@@ -232,18 +238,14 @@ footer{
     #art1{
         line-height: initial;
         height: 100vh;
-        margin-left: 1em;
-        margin-right: 2em;
-        margin-top: 1em;
+        margin: 1em 2em 0 1em;
         padding: 10px;
 
     }
     #art2{
         line-height: initial;
         padding: 10px;
-        margin-left: 1em;
-        margin-right: 2em;
-        margin-top: 1em;
+        margin: 1em 2em 0 1em;
         height: 100vh;
 
     }
@@ -299,24 +301,8 @@ footer{
         height: 40vh;
     }
     .show {
-        right: 0;
+        display: block;
     }
-    .hamburger-menu ul {
-        display: unset;
-        list-style: none;
-        padding: 0;
-        position: absolute;
-        top: 8vh;
-        left: 1rem; 
-    }
-
-        .hamburger-menu ul li {
-            margin-bottom: 1rem;
-        }
-
-            .hamburger-menu a {
-                font-size: 1.5rem;
-            }
     
 
 }

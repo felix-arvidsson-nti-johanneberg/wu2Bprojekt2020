@@ -17,18 +17,17 @@
             <li><a class="knapp" href="#anst"><h2>Anställda</h2></a></li>
             <li><a class="knapp" href="#art1"><h2>Arbete</h2></a></li>
             <li><a class="knapp" href="#artoss"><h2>Om oss</h2></a></li>
-            <li><a class="knapp" href="#banner"><h2>Hem</h2></a></li>
-            
+            <li><a class="knapp" href="#banner"><h2>Hem</h2></a></li> 
         </ul>
-        <img id="menubutton" src="/img/baseline_list_black_18dp.png" alt="a menu button" onclick="toggleMenu()">
-        <div class="hamburger-menu">
-            <ul>
-                <li><a href="#banner"></a>Hem</li>
-                <li><a href="#artoss"></a>Om oss</li>
-                <li><a href="#art1"></a>Arbete</li>
-                <li><a href="#anst"></a>Anställda</li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
+        <div class="dropdown">
+            <button id="menubutton" onclick="toggleMenu()">Menu</button>
+            <div class="hamburger-menu" id="myDropdown">
+                <a href="#banner">Hem</a>
+                <a href="#artoss">Om oss</a>
+                <a href="#art1">Arbete</a>
+                <a href="#anst">Anställda</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
         </div>
     </header>
     <div class="container">

@@ -6,13 +6,19 @@ $(document).ready(function(){
 })
 
 
-function toggleMenu(){
-    let overflow_hidden = document.querySelector("body")
-    overflow_hidden.classList.toggle("overflow-hidden")
+function toggleMenu() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
 
-    let show = document.querySelector(".hamburger-menu")
-    show.classList.toggle("show")
-
-    let fade = document.querySelector(".fade-layer")
-    fade.classList.toggle("fade")
-}
+  window.onclick = function(event) {
+    if (!event.target.matches('.menubutton')) {
+      var dropdowns = document.getElementsByClassName("hamburger-menu");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
