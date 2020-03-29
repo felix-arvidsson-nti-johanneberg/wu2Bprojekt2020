@@ -61,7 +61,7 @@ li{
     width: 15vw;
     align-content: center;
 }
-#menubutton{
+.menubutton{
     display: none;
 }
 .knapp{
@@ -199,7 +199,7 @@ footer{
     #menu{
         display: none;
     }
-    #menubutton{
+    .menubutton{
         margin: 5px;
         display: inherit;
         float: right;
