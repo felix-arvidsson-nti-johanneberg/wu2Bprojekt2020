@@ -184,8 +184,9 @@ footer{
 
 @media screen and (max-width: 450px) {
     header{
-        justify-content: right;
+        justify-content: flex-end;
         align-items: unset;
+        
     }
     .container{
         grid-template-areas: 
@@ -200,7 +201,7 @@ footer{
         display: none;
     }
     .menubutton{
-        margin: 5px;
+        margin: 15px 10px;
         display: inherit;
         float: right;
         background-color: #3498DB;
@@ -212,21 +213,21 @@ footer{
     .dropdown{
         position: relative;
         display: inline-block;
-        right: 0em;
     }
     .hamburger-menu {
         display: none;
         position: absolute;
         background-color: royalblue;
-        min-width: 160px;
+        min-width: 140px;
         z-index: 2;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        right: 0;
     }
     .hamburger-menu a{
         display: block;
         color: white;
         text-decoration: none;
-        padding: 12px 16px;
+        padding: 30px 16px;
     }
     #banner{
         width: 100vw;
